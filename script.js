@@ -60,18 +60,20 @@ document.querySelectorAll('.capability-card, .step, .audience-card').forEach(el 
     observer.observe(el);
 });
 
-// Navbar scroll effect
-let lastScroll = 0;
+// Navbar stays fixed - no auto-hide on scroll
+// Navigation bar remains visible at all times
 const navbar = document.querySelector('.navbar');
 
+// Add shadow effect when scrolling
 window.addEventListener('scroll', () => {
-    const currentScroll = window.pageYOffset;
-    
-    if (currentScroll > lastScroll && currentScroll > 100) {
-        navbar.style.transform = 'translateY(-100%)';
+    if (window.pageYOffset > 50) {
+        navbar.classList.add('scrolled');
     } else {
-        navbar.style.transform = 'translateY(0)';
+        navbar.classList.remove('scrolled');
     }
-    
-    lastScroll = currentScroll;
 });
+
+// Ensure navbar stays in view
+if (navbar) {
+    navbar.style.transform = 'translateY(0)';
+}

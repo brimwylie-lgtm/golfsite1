@@ -63,11 +63,13 @@ body {
 .logo-link {
     display: block;
     text-decoration: none;
+    line-height: 0;
 }
 
 .logo-image {
     height: 40px;
     width: auto;
+    display: block;
 }
 
 .nav-links {

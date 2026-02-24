@@ -12,30 +12,8 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Form handling
-const contactForm = document.getElementById('contactForm');
-if (contactForm) {
-    contactForm.addEventListener('submit', function(e) {
-        e.preventDefault();
-        
-        // Get form data
-        const formData = new FormData(contactForm);
-        const data = {};
-        formData.forEach((value, key) => {
-            data[key] = value;
-        });
-        
-        // Here you would typically send the data to your backend
-        // For now, just show a success message
-        console.log('Form submitted:', data);
-        
-        // Show success message
-        alert('Thank you for your interest! We will be in touch soon.');
-        
-        // Reset form
-        contactForm.reset();
-    });
-}
+// Tally form is embedded - no custom form handling needed
+// Tally handles all form submission, validation, and thank you pages
 
 // Add animation on scroll
 const observerOptions = {

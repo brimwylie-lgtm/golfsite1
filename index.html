@@ -302,45 +302,15 @@
             <h2>See What Your Golf Course Audience Is Worth</h2>
             <p class="section-intro">Get in touch to learn how Golfalytics can help you understand and activate your golfer audience.</p>
             
-            <form class="contact-form" id="contactForm">
-                <div class="form-row">
-                    <div class="form-group">
-                        <label for="name">Name *</label>
-                        <input type="text" id="name" name="name" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email *</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-                </div>
-                
-                <div class="form-group">
-                    <label for="company">Company</label>
-                    <input type="text" id="company" name="company">
-                </div>
-                
-                <div class="form-group">
-                    <label for="interest">I'm interested in *</label>
-                    <select id="interest" name="interest" required>
-                        <option value="">Select an option</option>
-                        <option value="sample">Request a Sample Insight</option>
-                        <option value="case-study">Request a Case Study</option>
-                        <option value="activation">Explore Digital Activation Options</option>
-                        <option value="call">Book a Discovery Call</option>
-                        <option value="course-owner">I manage a golf course</option>
-                        <option value="other">Other</option>
-                    </select>
-                </div>
-                
-                <div class="form-group">
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message" rows="4"></textarea>
-                </div>
-                
-                <button type="submit" class="button primary">Send Message</button>
-            </form>
+            <!-- Tally Form Embed -->
+            <div class="tally-form-container">
+                <iframe data-tally-src="https://tally.so/embed/2EeMlp?hideTitle=1&transparentBackground=1&dynamicHeight=1" loading="lazy" width="100%" height="578" frameborder="0" marginheight="0" marginwidth="0" title="Golfalytics Contact Form"></iframe>
+            </div>
         </div>
     </section>
+
+    <!-- Tally Embed Script -->
+    <script>var d=document,w="https://tally.so/widgets/embed.js",v=function(){"undefined"!=typeof Tally?Tally.loadEmbeds():d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach((function(e){e.src=e.dataset.tallySrc}))};if("undefined"!=typeof Tally)v();else if(d.querySelector('script[src="'+w+'"]')==null){var s=d.createElement("script");s.src=w,s.onload=v,s.onerror=v,d.body.appendChild(s);}</script>
 
     <!-- Footer -->
     <footer class="footer">

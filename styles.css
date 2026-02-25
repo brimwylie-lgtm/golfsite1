@@ -744,120 +744,70 @@ h2 {
     }
 }
 
-/* Arenalytics Cross-Promotion Banner */
-.arenalytics-promo {
-    background: linear-gradient(135deg, rgba(45, 80, 22, 0.95) 0%, rgba(74, 124, 31, 0.95) 100%),
-                url('https://images.unsplash.com/photo-1515703407324-5f753afd8be8?w=1600&q=80') center/cover;
-    color: white;
-    padding: 5rem 0;
-    position: relative;
+/* Arenalytics Compact Ad Banner */
+.arenalytics-ad {
+    background: var(--bg-light);
+    padding: 2rem 0;
+    border-top: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
 }
 
-.arenalytics-promo::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: linear-gradient(135deg, rgba(45, 80, 22, 0.92) 0%, rgba(74, 124, 31, 0.92) 100%);
-    z-index: 0;
-}
-
-.arenalytics-promo .container {
-    position: relative;
-    z-index: 1;
-}
-
-.promo-grid {
-    display: grid;
-    grid-template-columns: 1.5fr 1fr;
-    gap: 4rem;
-    align-items: center;
-}
-
-.promo-content h2 {
-    font-size: 2.5rem;
-    margin-bottom: 1.5rem;
-    color: white;
-    text-align: left;
-}
-
-.promo-intro {
-    font-size: 1.125rem;
-    line-height: 1.8;
-    margin-bottom: 2rem;
-    opacity: 0.95;
-}
-
-.promo-features {
-    list-style: none;
-    margin: 2rem 0;
-    padding: 0;
-}
-
-.promo-features li {
+.ad-banner {
+    background: linear-gradient(135deg, #2d5016 0%, #4a7c1f 100%);
+    border-radius: 12px;
+    padding: 2rem 2.5rem;
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    gap: 1rem;
-    margin-bottom: 1rem;
-    font-size: 1.125rem;
+    gap: 2rem;
+    box-shadow: 0 4px 12px rgba(45, 80, 22, 0.15);
 }
 
-.promo-icon {
+.ad-label {
+    display: inline-block;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: rgba(255, 255, 255, 0.7);
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.ad-content h3 {
     font-size: 1.5rem;
-    width: 40px;
-    height: 40px;
-    background: rgba(255, 255, 255, 0.15);
-    border-radius: 8px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    color: white;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+}
+
+.ad-content p {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.9);
+    margin: 0;
+}
+
+.ad-cta {
     flex-shrink: 0;
 }
 
-.promo-button {
+.ad-button {
     display: inline-flex;
     align-items: center;
-    gap: 0.75rem;
-    padding: 1rem 2rem;
+    gap: 0.5rem;
+    padding: 0.875rem 1.75rem;
     background: white;
     color: var(--primary-color);
     text-decoration: none;
     border-radius: 6px;
     font-weight: 600;
-    font-size: 1.125rem;
+    font-size: 1rem;
     transition: all 0.3s;
-    margin-top: 1rem;
+    white-space: nowrap;
 }
 
-.promo-button:hover {
+.ad-button:hover {
     transform: translateY(-2px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-}
-
-.promo-button .arrow {
-    transition: transform 0.3s;
-}
-
-.promo-button:hover .arrow {
-    transform: translateX(5px);
-}
-
-.promo-visual {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.promo-image {
-    width: 100%;
-    height: 350px;
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.05) 100%),
-                url('https://images.unsplash.com/photo-1515703407324-5f753afd8be8?w=800&q=80') center/cover;
-    border-radius: 12px;
-    border: 2px solid rgba(255, 255, 255, 0.2);
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
 }
 
 /* Responsive Design */
@@ -882,35 +832,23 @@ h2 {
         padding: 3rem 2rem;
     }
     
-    .promo-grid {
-        grid-template-columns: 1fr;
-        gap: 2rem;
-    }
-    
-    .promo-content h2 {
-        font-size: 2rem;
+    .ad-banner {
+        flex-direction: column;
         text-align: center;
+        padding: 1.5rem;
     }
     
-    .promo-intro {
-        text-align: center;
+    .ad-content h3 {
+        font-size: 1.25rem;
     }
     
-    .promo-features {
-        max-width: 400px;
-        margin-left: auto;
-        margin-right: auto;
+    .ad-content p {
+        font-size: 0.95rem;
     }
     
-    .promo-button {
-        display: flex;
+    .ad-button {
+        width: 100%;
         justify-content: center;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    
-    .promo-image {
-        height: 250px;
     }
 }
 

@@ -753,14 +753,14 @@ h2 {
 }
 
 .ad-banner {
-    background: linear-gradient(135deg, #2d5016 0%, #4a7c1f 100%);
+    background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%);
     border-radius: 12px;
     padding: 2rem 2.5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 2rem;
-    box-shadow: 0 4px 12px rgba(45, 80, 22, 0.15);
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.2);
 }
 
 .ad-label {
@@ -796,7 +796,7 @@ h2 {
     gap: 0.5rem;
     padding: 0.875rem 1.75rem;
     background: white;
-    color: var(--primary-color);
+    color: #1e3a8a;
     text-decoration: none;
     border-radius: 6px;
     font-weight: 600;
